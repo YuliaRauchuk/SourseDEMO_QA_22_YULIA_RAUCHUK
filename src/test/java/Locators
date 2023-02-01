@@ -1,0 +1,78 @@
+1. WebElement Swaglabs = //div[@class='login_logo']
+2. Login wrapper = //div[@class='login_wrapper']
+3. Login wrapper-inner = //div[@class='login_wrapper-inner']
+4. Login button container = //div[@class='form_column']
+5. Login box = //div[@class='login-box']
+6. User name = //div[@name='user-name']
+7. Password = //div[@name='password']
+8. Error message= //div[@class='error-message-container']
+9. Login button= //div[@name='login-button']
+10.Login password = //div[@class='login_password']
+11.Accepted usernames are = //div[@id='login_credentials']
+12.Password for all users = //div[@class='login_password']
+13.All items = //a[1][@id='inventory_sidebar_link']
+14.About = //a[2][@id='about_sidebar_link']
+15.Logout = //a[3][@id='logout_sidebar_link']
+16.Reset App State = //a[4][@id='reset_sidebar_link']
+17.Shopping cart = //div[@class='shopping_cart_container']
+18.Products = //div[@class='title']
+19.Bm-burger-button" = //div[@id='react-burger-menu-btn']
+20.Generic = //div[@class='peek']
+21.Product sort container = //div[@class='product_sort_container']
+22.Name (A TO Z) = //option[@value='az']
+23.Name (Z TO A) = //option[@value='za']
+24.Price (LOW TO HIGH) = //option[@value='lohi']
+25.Price (HIGH TO LOW) = //option[@value='hilo']
+26.Your card = //span[@class='title']
+27.QTY = //div[@class='cart_quantity_label']
+28.DESCRIPTION = //div[@class='cart_desc_label']
+29.Cart Footer = div[@class='cart_footer']
+30.Footer = //footer[@class='footer']
+31.Social TWITTER = //li[@class='social_twitter']
+32.Social FACEBOOK = //li[@class='social_facebook']
+33.Social LINKEDIN = //li[@class='social_linkedin']
+34.Footer copy = //div[@class='footer_copy']
+35.SWAG BOT FOOTER = //div[@alt='Swag Bot Footer']
+36.Button Continue Shopping = //div[@name='continue-shopping']
+37.Button Checkout =  //div[@name='continue-shopping']
+-------------------------------------------------------------------------------------------------
+Xpath LOCATORS
+_________________________________________________________________________________________________
+Поиск текста на странице:
+     //*[contains(text(), 'Test.allTheThings() T-Shirt (Red)')]
+     //*[contains(text(), 'Get your testing superhero on with the Sauce Labs bolt T-shirt.
+     From American Apparel, 100% ringspun combed cotton, heather gray with red bolt')]
+Поиск предков класса:
+    //*[@class="btn btn_primary btn_small btn_inventory"]//ancestor::div
+    <button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-bolt-t-shirt"
+    id="add-to-cart-sauce-labs-bolt-t-shirt" name="add-to-cart-sauce-labs-bolt-t-shirt">Add to cart</button>
+Поиск потомков:
+     //*[@class="inventory_list"]//descendant::div
+     <div class="inventory_item_description"><div class="inventory_item_label"><a href="#"
+     id="item_4_title_link"><div class="inventory_item_name">Sauce Labs Backpack</div></a>
+     <div class="inventory_item_desc">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</div></div><div class="pricebar">
+     <div class="inventory_item_price">$29.99</div><button class="btn btn_primary btn_small btn_inventory" data-test="add-to-cart-sauce-labs-backpack"
+     id="add-to-cart-sauce-labs-backpack" name="add-to-cart-sauce-labs-backpack">Add to cart</button></div></div>
+Поиск по тегу <a>:
+     //*[@class="inventory_list"]//following::a
+     <a href="#" id="item_1_img_link"><img alt="Sauce Labs Bolt T-Shirt" class="inventory_item_img"
+     src="/static/media/bolt-shirt-1200x1500.c0dae290.jpg"></a>
+Поиск родительского элемента:
+     //*[@class="inventory_item_description"]//parent::a
+     <a href="#" id="item_2_title_link"><div class="inventory_item_name">Sauce Labs Onesie</div></a>
+
+-------------------------------------------------------------------------------------------------------
+Css LOCATORS
+ ------------------------------------------------------------------------------------------------------
+Поиск по имени элемента:
+     .inventory_item_name
+Поиск по цене элемента:
+     .pricebar.inventory_item_price
+Поиск по ссылке на странице:
+    [href="https://www.linkedin.com/company/sauce-labs/"]
+Поиск элементов по стоимости :
+    [class$=price]
+Поиск с пеходом по кнопке:
+     [name|=add]
+
+
